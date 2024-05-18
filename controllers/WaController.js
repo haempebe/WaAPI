@@ -54,7 +54,7 @@ const api = async (req, res) => {
     const user = await client.isRegisteredUser(nohp);
     if (user) {
       client.sendMessage(nohp, pesan);
-      res.json({ status: "berhasil terkirim", pesan });
+      res.json({ status: "berhasil", pesan: "berhasil Terkirim" });
     } else {
       res.json({ status: "gagal", pesan: "nomor WA tidak terdaftar" });
     }
