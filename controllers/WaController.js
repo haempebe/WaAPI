@@ -15,11 +15,11 @@ const client = new Client({
       "--disable-gpu",
     ],
   },
-  webVersionCache: {
-    type: "remote",
-    remotePath:
-      " https://raw.githubusercontent.com/wppconnect-team/wa-version/601b90a9fffce8a19e08efba9bd804fdcb43f656/html/2.2412.54.html",
-  },
+  // webVersionCache: {
+  //   type: "remote",
+  //   remotePath:
+  //     "https://raw.githubusercontent.com/wppconnect-team/wa-version/main/html/2.3000.1012750699-alpha.html",
+  // },
 });
 
 client.on("qr", (qr) => {
